@@ -9,4 +9,9 @@
 #10 gelbe, rotierende Cubes sind über die Spielfläche verteilt
 #bei Collision mit den Pickups verschwinden diese
 
+#Erweiterungen:
+#Punktesystem (noch nicht in der UI)
+#schwarze Pick ups geben Minuspunkte
+#gelbe Pick ups geben Pluspunkte
+
 
