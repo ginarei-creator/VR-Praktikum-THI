@@ -1,2 +1,3 @@
 # VR-Praktikum-THI
-#first edit to controll commit
+#first edit to control commit
+#changed folder to Project
