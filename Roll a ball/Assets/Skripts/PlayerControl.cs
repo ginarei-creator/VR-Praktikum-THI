@@ -7,22 +7,28 @@ public class PlayerControl : MonoBehaviour
 {
     private Rigidbody rb;
     public bool keyboard;
-    //public Text MyText;
+    public GameObject t;
+    public GameObject door;
+    public GameObject door2;
     public float speed;
     public int score;
+    public int level;
+    public GameObject level3;
     Vector3 movement;
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         score = 0;
-        //MyText.text = "Points";
+        level = 1;
+        level3 = GameObject.FindGameObjectWithTag("Level3");
+        level3.SetActive(false);
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {   
-       // MyText.text = "Points" + score;
+       
         if(keyboard)
         {
             float moveHorizontal = Input.GetAxis ("Horizontal"); 
@@ -30,6 +36,23 @@ public class PlayerControl : MonoBehaviour
             movement = new Vector3(moveHorizontal,0f,moveVertical);
             movement=movement *speed;
             rb.AddForce(movement);
+            if(score == 10 && level ==1)
+            {
+                //remove Door
+                door = GameObject.FindGameObjectWithTag("Door");
+                door.SetActive(false);
+                level = 2;
+            }
+            if (score >=14 && level == 2)
+            {
+                //remove Door
+                door2 = GameObject.FindGameObjectWithTag("Door2");
+                door2.SetActive(false);
+                //level3 = GameObject.FindGameObjectWithTag("Level3");
+                level3.SetActive(true);
+                level = 3;
+            }
+            t.GetComponent<TextMesh>().text = "Score: " + score + "\nLevel: " + level;
         }
         
     }

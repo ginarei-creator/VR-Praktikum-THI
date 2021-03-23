@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Pick Up
   - No Pick Up
+  - Door
+  - Level3
+  - Door2
+  - Ground3
+  - Play3
   layers:
   - Default
   - TransparentFX

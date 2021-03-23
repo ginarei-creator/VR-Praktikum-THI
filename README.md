@@ -10,8 +10,10 @@
 #bei Collision mit den Pickups verschwinden diese
 
 #Erweiterungen:
-#Punktesystem (noch nicht in der UI)
+#Punktesystem und Anzeige des Levels
 #schwarze Pick ups geben Minuspunkte
 #gelbe Pick ups geben Pluspunkte
+#mit Aufsammeln aller Pickups im ersten Board (blau) öffnet sich eine Tür zu Level (rot)
+#hat man 14 Punkte in Level 2, erscheint Level 3(grün), welches sich auf und ab bewegt
 
 
