@@ -15,6 +15,7 @@ public class DisplayFlightData : MonoBehaviour
     void Start()
     {
         flyJoystick = player.GetComponent <FlyJoystick >();
+        textSpeed.color = new Color(146.0f/255.0f, 234.0f/255.0f, 242.0f/255.0f);
     }
 
     // Update is called once per frame
@@ -29,10 +30,12 @@ public class DisplayFlightData : MonoBehaviour
         if(height < warningHeight)
         {
             warnImage.SetActive(true);
+            textHeight.color = new Color(206.0f/255.0f, 46.0f/255.0f, 46.0f/255.0f);
         }
         else
         {
             warnImage.SetActive(false);
+            textHeight.color = new Color(146.0f/255.0f, 234.0f/255.0f, 242.0f/255.0f);
         }
 
     }
