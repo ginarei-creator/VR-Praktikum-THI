@@ -2733,6 +2733,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1747c0bc824d8434b8d303a4cb9a66cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textSpeed: {fileID: 1205239776}
+  textHeight: {fileID: 1805632799}
+  player: {fileID: 1572342650}
+  warningHeight: 50
+  warnImage: {fileID: 1747225967}
 --- !u!114 &1850470063
 MonoBehaviour:
   m_ObjectHideFlags: 0

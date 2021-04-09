@@ -21,9 +21,10 @@ public class FlyJoystick : MonoBehaviour
         float inputRoll = Input.GetAxis("Roll");
         float inputYawn = Input.GetAxis("Yawn");
         float inputThrottle = Input.GetAxis("Throttle");
-        Vector3 rotationMovement = new Vector3 (inputPitch * Time.deltaTime * rotationSpeed, inputYawn * Time.deltaTime * rotationSpeed, inputRoll * Time.deltaTime * rotationSpeed );
+        Vector3 rotationMovement = new Vector3 (inputPitch * Time.deltaTime * rotationSpeed, inputRoll * Time.deltaTime * rotationSpeed, inputYawn * Time.deltaTime * rotationSpeed );
         this.transform.Rotate(rotationMovement);
         speed = inputThrottle * speedAmplifier;
+        Debug.Log(inputThrottle);
         this.transform.Translate (Vector3.forward * speed * Time.deltaTime);
     }
 }
