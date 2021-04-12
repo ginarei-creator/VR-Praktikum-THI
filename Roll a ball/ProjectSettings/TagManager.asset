@@ -11,6 +11,7 @@ TagManager:
   - Door2
   - Ground3
   - Play3
+  - Con
   layers:
   - Default
   - TransparentFX

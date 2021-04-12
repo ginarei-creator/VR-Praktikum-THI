@@ -36,7 +36,9 @@ public class PlayerControl : MonoBehaviour
             movement = new Vector3(moveHorizontal,0f,moveVertical);
             movement=movement *speed;
             rb.AddForce(movement);
-            if(score == 10 && level ==1)
+            
+        }
+        if(score == 10 && level ==1)
             {
                 //remove Door
                 door = GameObject.FindGameObjectWithTag("Door");
@@ -52,8 +54,10 @@ public class PlayerControl : MonoBehaviour
                 level3.SetActive(true);
                 level = 3;
             }
-            t.GetComponent<TextMesh>().text = "Score: " + score + "\nLevel: " + level;
-        }
+            if(score >= 1) {
+                t.GetComponent<TextMesh>().text = "Score: " + score + "\nLevel: " + level;
+            }
+            
         
     }
     void OnTriggerEnter(Collider other) 
@@ -68,6 +72,10 @@ public class PlayerControl : MonoBehaviour
         {
             other.gameObject.SetActive (false); 
             score = score - 1;
+        }
+        else if(other.gameObject.CompareTag("Con"))
+        {
+            other.gameObject.SetActive (true); 
         }
     }
 }
