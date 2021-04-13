@@ -6,10 +6,16 @@ public class Fly : MonoBehaviour
 {
     public float speedtrans;
     public float speedrot;
+    public GameObject rocket_l;
+    public GameObject rocket_r;
+
+    private bool beingHandled;
+    float durationRocket;
     // Start is called before the first frame update
     void Start()
     {
-        
+        beingHandled = true;
+
     }
 
     // Update is called once per frame
@@ -39,5 +45,30 @@ public class Fly : MonoBehaviour
         {
             this.transform.Translate (Vector3.up * speedtrans * Time.deltaTime);
         }
+        if (Input.GetKey(KeyCode.P) || !beingHandled)
+        {
+            if (Input.GetKey(KeyCode.P))
+            {
+                rocket_l.SetActive(true);
+                rocket_r.SetActive(true);
+                durationRocket = 1.8f;
+                beingHandled = false;
+            }
+            else if (durationRocket <= 0)
+            {
+                beingHandled = true;
+            }
+            else
+            {
+                durationRocket -= Time.deltaTime;
+            }
+        }
+        else
+        {
+            rocket_l.SetActive(false);
+            rocket_r.SetActive(false);
+        }
+        
     }
+
 }
