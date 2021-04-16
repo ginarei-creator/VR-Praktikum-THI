@@ -5,10 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/inspektion.unity
-    guid: 03ec15edb3f177a47a9fd1aab0abeb80
-  - enabled: 1
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/cockpit.unity
     guid: c2f89c98f5eaf444eada391c36d57e36
+  - enabled: 1
+    path: Assets/Scenes/inspektion_without_hover.unity
+    guid: d30f376b1d12e254cb1b4a1f13b09c4d
+  - enabled: 1
+    path: Assets/Scenes/cockpitVR.unity
+    guid: 90cbd8f2d89b6ae44a6c84eb69de9056
   m_configObjects: {}
