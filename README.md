@@ -17,14 +17,16 @@ dieses Projekt enthält eine funktionierende Version mit VR-Unterstützung für 
 
 ## Flugsimulator
 dieses Projekt enthält eine funktionierende Version mit VR-Unterstützungnfür einen Flugsimulator
-- **Szenen:** Inspektion und Cockpit
+- **Szenen:** Inspektion_without_hover und CockpitVR
 - **Features:** alle Standardfeatures sind enthalten
 
 ### Erweiterungen
 - **Partikel:** Feuerstrahl aus den Turbinen, bei Tastendruck Raketen aus den Kanonen
 - **Render Textures:** Kameras an jeder Kanone
 - **Umgebung:** unsichtbare Meshes, damit der Player nach der Inspektion über den Flügel zur Schwingtür laufen kann und Geräusche an den Turbinen und im Cockpit
-- **Displays:** blinkendes Warnzeichen und Schrift in rot bei Unterschreitung der Mindesthöhe
+- **Displays:** blinkendes Warnzeichen und Schrift in rot bei Unterschreitung der Mindesthöhe (50m)
+- **Buttons:** zwei rote Buttons im Cockpit: der unter der Kanonen-Kamera ist für das Abfeuern der Kanone, der andere zum switchen zwischen HUD und Canvas
+- Steuerung erfolgt durch Joystick und rechtem Handcontroller
 
 
 
