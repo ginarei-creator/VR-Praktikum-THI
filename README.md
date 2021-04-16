@@ -1,6 +1,5 @@
 # VR-Praktikum-THI
-#first edit to control commit
-#changed folder to Project
+Projekt von: Gina Reinert
 
 ## Roll a ball:
 dieses Projekt enthält eine funktionierende Version mit VR-Unterstützung für "Roll A Ball". 
