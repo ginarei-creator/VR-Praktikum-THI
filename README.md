@@ -12,8 +12,9 @@ dieses Projekt enthält eine funktionierende Version mit VR-Unterstützung für 
 - Punktesystem und Anzeige des Levels
 - schwarze Pick ups geben Minuspunkte
 - gelbe Pick ups geben Pluspunkte
-- mit Aufsammeln aller Pickups im ersten Board (blau) öffnet sich eine Tür zu Level (rot)
-- hat man 14 Punkte in Level 2, erscheint Level 3(grün), welches sich ab bewegt
+- mit Aufsammeln aller Pickups im ersten Board (blau) öffnet sich eine Tür zu Level 2 (rot)
+- hat man 14 Punkte in Level 2, erscheint Level 3 (grün), welches sich ab bewegt
+- am Anfang des Spiels erscheint der Hinweis, dass das Spiel mit ablegen des Balls auf der grünen Fläche gewonnen ist
 
 ## Flugsimulator
 dieses Projekt enthält eine funktionierende Version mit VR-Unterstützung für einen Flugsimulator
